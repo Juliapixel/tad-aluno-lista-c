@@ -22,4 +22,6 @@ void adicionarAluno(Lista *l, Aluno a);
 void removerUltimo(Lista *l);
 int buscarAlunoPorRm(Lista *l, int rm);
 
+float calcularMedia(Lista l);
+
 #endif
