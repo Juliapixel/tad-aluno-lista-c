@@ -13,6 +13,10 @@ Aluno criarAluno(char *nome, int rm, float nota) {
     return a;
 }
 
+void alterarNota(Aluno *a, float novaNota) {
+    a->nota = novaNota;
+}
+
 void imprimirAluno(Aluno *a) {
     printf("Nome: %s, RM: %d, Nota: %.1f\n", &a->nome, a->rm, a->nota);
 }

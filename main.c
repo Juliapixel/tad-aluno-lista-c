@@ -1,8 +1,12 @@
+#include <stdio.h>
 #include "aluno.h"
 
 int main(int argc, char const *argv[]) {
     Aluno a1 = criarAluno("Maria", 559087, 8.5);
     Aluno a2 = criarAluno("João", 558761, 7.0);
+    imprimirAluno(&a1);
+    alterarNota(&a1, 0.0);
+    printf("Alterando nota\n");
     imprimirAluno(&a1);
     imprimirAluno(&a2);
 
