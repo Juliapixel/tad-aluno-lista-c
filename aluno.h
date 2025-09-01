@@ -7,8 +7,19 @@ typedef struct {
     int rm;
 } Aluno;
 
+typedef struct {
+    Aluno *ptr;
+    int len;
+    int cap;
+} Lista;
+
 Aluno criarAluno(char *nome, int rm, float nota);
 void imprimirAluno(Aluno *a);
 void alterarNota(Aluno *a, float novaNota);
+
+Lista criarLista();
+void adicionarAluno(Lista *l, Aluno a);
+void removerUltimo(Lista *l);
+int buscarAlunoPorRm(Lista *l, int rm);
 
 #endif
