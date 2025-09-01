@@ -22,5 +22,8 @@ int main(int argc, char const *argv[]) {
     } else {
         printf("Aluno não encontrado\n");
     }
+
+    printf("Média da lista: %.2f\n", calcularMedia(l));
+    
     return 0;
 }

@@ -50,3 +50,11 @@ int buscarAlunoPorRm(Lista *l, int rm) {
     }
     return -1;
 }
+
+float calcularMedia(Lista l) {
+    float soma = 0;
+    for (int i = 0; i < l.len; i++) {
+        soma += l.ptr[i].nota;
+    }
+    return (l.len > 0) ? (soma / l.len) : 0;
+}
